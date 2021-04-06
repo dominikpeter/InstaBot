@@ -15,7 +15,9 @@ likes = ["sunrise", "sunset", "drone",
          "droneshot", "dronephotography", "rigi",
          "hallwilersee", "sempach", "standuppaddle",
          "mountainbike", "switzerland", "sonnenaufgabg",
-         "sonnenuntergang", "drohne", "see", "aargau"]
+         "sonnenuntergang", "drohne", "see", "aargau",
+         "sempachersee", "water", "calm", "relax", "luzern",
+         "bern", "aarau", "wandern", "berge", "droneoftheday"]
 
 session = InstaPy(username=INSTA_USER, password=INSTA_PW, headless_browser=True)
 with smart_run(session):
@@ -24,10 +26,10 @@ with smart_run(session):
     # general settings
     session.set_relationship_bounds(enabled=True,
                                     delimit_by_numbers=True,
-                                    max_followers=4590,
-                                    min_followers=45,
-                                    min_following=77)
+                                    max_followers=45900,
+                                    min_followers=20,
+                                    min_following=20)
 
     session.set_dont_include(friend_list)
     session.set_dont_like(dont_like)
-    session.like_by_tags(likes, amount=500)
+    session.like_by_tags(likes, amount=1000)
