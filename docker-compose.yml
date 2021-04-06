@@ -1,0 +1,28 @@
+# ========================================================================
+# Instagram Bot
+# -----------------------------------------------------------------------
+# Author: Dominik Peter
+# Date: 18.01.2021
+# Version: 1.0.0
+# ========================================================================
+
+version: "3.9"
+services:
+
+# ========================================================================
+# InstaPy
+# ========================================================================
+  instapy:
+    build:
+      context: instapy/.
+    image: instapy
+    env_file: .env
+    environment:
+      - PYTHONUNBUFFERED=0
+      - INSTAPY_WORKSPACE=/insapy/app
+      - INSTA_USER=${INSTA_USER}
+      - INSTA_PW=${INSTA_PW}
+    volumes:
+      - ./instapy/app:/instapy/app
+      - ./instapy/tmp:/tmp
+      - ./login_util.py:/usr/local/lib/python3.7/site-packages/instapy/login_util.py
