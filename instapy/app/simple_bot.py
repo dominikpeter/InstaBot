@@ -20,7 +20,10 @@ likes = ["sunrise", "sunset", "drone",
          "bern", "aarau", "wandern", "berge", "droneoftheday", 
          "nature", "landscape", "natur", "wanderlust", "#lakelife"]
 
-session = InstaPy(username=INSTA_USER, password=INSTA_PW, headless_browser=True)
+session = InstaPy(username=INSTA_USER,
+                  password=INSTA_PW,
+                  headless_browser=True)
+                  
 with smart_run(session):
 
     """ Activity flow """

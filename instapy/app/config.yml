@@ -1,4 +1,10 @@
 
+
+n_likes: 1000
+max_followers: 10000
+min_fallowers: 50
+min_following: 50
+
 likes:
   - sunrise
   - sunset
@@ -32,15 +38,17 @@ likes:
   - wanderlust
   - lakelife
 
-  dont_like:
-    - sex
-    - nude
-    - porn
-    - pussy
-    - girl
-    - girls
-    - fuck
+dont_like:
+  - sex
+  - nude
+  - porn
+  - pussy
+  - girl
+  - girls
+  - fuck
+
+friends:
+ - vireaksoeur
+ - amytolja
   
-  friends:
-   - amytolja
-   - vireaksoeur
+
