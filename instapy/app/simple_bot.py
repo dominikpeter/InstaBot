@@ -17,7 +17,8 @@ likes = ["sunrise", "sunset", "drone",
          "mountainbike", "switzerland", "sonnenaufgabg",
          "sonnenuntergang", "drohne", "see", "aargau",
          "sempachersee", "water", "calm", "relax", "luzern",
-         "bern", "aarau", "wandern", "berge", "droneoftheday"]
+         "bern", "aarau", "wandern", "berge", "droneoftheday", 
+         "nature", "landscape", "natur", "wanderlust", "#lakelife"]
 
 session = InstaPy(username=INSTA_USER, password=INSTA_PW, headless_browser=True)
 with smart_run(session):
