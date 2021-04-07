@@ -1,9 +1,13 @@
 
 
-n_likes: 1000
+min_likes: 30
+max_likes: 100
+min_to_follow: 10
+max_to_follow: 20
 max_followers: 10000
 min_fallowers: 50
 min_following: 50
+
 
 likes:
   - sunrise
@@ -48,5 +52,13 @@ dont_like:
 friends:
  - vireaksoeur
  - amytolja
+
+
+photo_comments:
+  - Nice shot! @{}
+  - Love it! @{}
+  - Looks awesome @{}
+  - Wow! @{}
+  - Cool! @{}
   
 
