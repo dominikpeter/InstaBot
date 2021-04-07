@@ -1,5 +1,3 @@
-
-
 min_likes: 30
 max_likes: 100
 min_to_follow: 10
@@ -20,12 +18,10 @@ locations:
   - 249446284
   - 845416138
 
-
 likes:
   - sunrise
   - sunset
   - droneoftheday
-
 
 random_likes:
   - sunrise
@@ -67,6 +63,10 @@ random_likes:
   - hike
   - hiking
   - biking
+  - sonne
+  - summer
+  - sun
+  - summertime
 
 dont_like:
   - sex
@@ -76,9 +76,8 @@ dont_like:
   - fuck
 
 friends:
- - vireaksoeur
- - amytolja
-
+  - vireaksoeur
+  - amytolja
 
 photo_comments:
   - Nice shot! @{}
@@ -86,5 +85,3 @@ photo_comments:
   - Looks awesome @{}
   - Wow! @{}
   - Cool! @{}
-  
-
