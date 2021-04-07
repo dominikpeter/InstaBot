@@ -1,6 +1,9 @@
 
 import random
 import os
+import time
+
+
 from instapy import InstaPy
 from instapy import smart_run
 
@@ -20,20 +23,30 @@ likes = ["sunrise", "sunset", "drone",
          "bern", "aarau", "wandern", "berge", "droneoftheday", 
          "nature", "landscape", "natur", "wanderlust", "#lakelife"]
 
-session = InstaPy(username=INSTA_USER,
+
+if __name__ == "__main__":
+
+    while 1==1:
+
+        print("Starting Bot...")
+        time.sleep(random.randint(1800,14400))
+
+        session = InstaPy(username=INSTA_USER,
                   password=INSTA_PW,
                   headless_browser=True)
-                  
-with smart_run(session):
 
-    """ Activity flow """
-    # general settings
-    session.set_relationship_bounds(enabled=True,
-                                    delimit_by_numbers=True,
-                                    max_followers=45900,
-                                    min_followers=20,
-                                    min_following=20)
+        with smart_run(session):
 
-    session.set_dont_include(friend_list)
-    session.set_dont_like(dont_like)
-    session.like_by_tags(likes, amount=1000)
+            """ Activity flow """
+            # general settings
+            session.set_relationship_bounds(enabled=True,
+                                            delimit_by_numbers=True,
+                                            max_followers=45900,
+                                            min_followers=20,
+                                            min_following=20)
+
+            session.set_dont_include(friend_list)
+            session.set_dont_like(dont_like)
+            session.like_by_tags(likes, amount=100)
+
+        session.stop()
