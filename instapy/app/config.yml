@@ -7,9 +7,27 @@ max_to_follow: 20
 max_followers: 10000
 min_fallowers: 50
 min_following: 50
+likes_sample: 10
+
+locations:
+  - 217254267
+  - 252833442
+  - 5323963
+  - 238158830
+  - 761560033
+  - 452896474757280
+  - 282212720
+  - 249446284
+  - 845416138
 
 
 likes:
+  - sunrise
+  - sunset
+  - droneoftheday
+
+
+random_likes:
   - sunrise
   - sunset
   - drone
@@ -41,6 +59,14 @@ likes:
   - natur
   - wanderlust
   - lakelife
+  - sky
+  - relax
+  - photography
+  - enduro
+  - biketour
+  - hike
+  - hiking
+  - biking
 
 dont_like:
   - sex
