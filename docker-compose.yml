@@ -15,6 +15,7 @@ services:
   instapy:
     build:
       context: instapy/.
+    container_name: instapy
     image: instapy
     env_file: .env
     environment:
