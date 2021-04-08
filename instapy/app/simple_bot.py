@@ -2,15 +2,23 @@
 import random
 import os
 import time
+from datetime import datetime
+
 
 from instapy import InstaPy
 from instapy import smart_run
 from const import *
 
+print(YML_CONFIG)
+
+start = datetime.now()
+
 
 session = InstaPy(username=INSTA_USER,
                   password=INSTA_PW,
                   headless_browser=True)
+
+session.logger.info(YML_CONFIG)
 
 with smart_run(session):
 
@@ -48,3 +56,7 @@ with smart_run(session):
 
     for pod in PODS:
         session.join_pods(topic=pod)
+
+minutes_diff = (datetime.now() - start).total_seconds() / 60.0
+session.logger.info(f"Duration = {minutes_diff} minutes")
+
