@@ -30,6 +30,7 @@ min_likes = yml_config["min_likes"]
 max_likes = yml_config["max_likes"]
 min_to_follow = yml_config["min_to_follow"]
 max_to_follow = yml_config["max_to_follow"]
+pods = yml_config["pods"]
 
 
 session = InstaPy(username=INSTA_USER,
@@ -69,4 +70,6 @@ with smart_run(session):
 
     session.set_do_comment(enabled=True, percentage=95)
     session.set_comments(photo_comments, media='Photo')
-    session.join_pods(topic='drone')
+
+    for pod in pods:
+        session.join_pods(topic=pod)
