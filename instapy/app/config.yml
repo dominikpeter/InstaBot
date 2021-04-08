@@ -83,11 +83,11 @@ friends:
   - amytolja
 
 photo_comments:
-  - Nice shot! @{}
-  - Love it! @{}
-  - Looks awesome @{}
-  - Wow! @{}
-  - Cool! @{}
+  - 'Nice shot! @{}'
+  - 'Love it! @{}'
+  - 'Looks awesome @{}'
+  - 'Wow! @{}'
+  - 'Cool! @{}'
 
 pods:
   - drone
