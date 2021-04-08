@@ -6,6 +6,7 @@ max_followers: 3000
 min_fallowers: 50
 min_following: 50
 likes_sample: 10
+user_interacts: 5
 
 locations:
   - '217254267'

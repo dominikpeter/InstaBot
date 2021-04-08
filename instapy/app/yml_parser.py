@@ -2,9 +2,8 @@
 import yaml
 from urllib.request import urlopen
 
-link = "https://raw.githubusercontent.com/dominikpeter/InstaBot/master/instapy/app/config.yml"
 
-def parse_yml(path):
+def parse_yml(link):
 
     f = urlopen(link)
     config = f.read()
