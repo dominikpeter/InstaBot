@@ -86,8 +86,11 @@ photo_comments:
   - 'Nice shot! @{}'
   - 'Love it! @{}'
   - 'Looks awesome @{}'
+  - 'Wow! :fire: @{}'
+  - 'Cool! :fire: @{}'
   - 'Wow! @{}'
   - 'Cool! @{}'
+  - ':fire: :fire: :fire: @{}'
 
 pods:
   - drone
