@@ -4,6 +4,7 @@ FROM instapy/instapy:0.6.13
 WORKDIR /instapy
 ADD . /instapy
 
+RUN chmod + ./entrypoint.sh
 
 CMD ["sh", "./entrypoint.sh"]
 
