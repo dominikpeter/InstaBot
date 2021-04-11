@@ -20,7 +20,7 @@ services:
     env_file: .env
     environment:
       - PYTHONUNBUFFERED=0
-      - INSTAPY_WORKSPACE=/insapy/app
+      - INSTAPY_WORKSPACE=/instapy/app
       - INSTA_USER=${INSTA_USER}
       - INSTA_PW=${INSTA_PW}
     volumes:
