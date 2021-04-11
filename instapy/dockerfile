@@ -6,5 +6,5 @@ ADD . /instapy
 
 RUN chmod + ./entrypoint.sh
 
-CMD ["./entrypoint.sh"]
+CMD ["sh", "./entrypoint.sh"]
 
