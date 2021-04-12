@@ -1,9 +1,9 @@
-min_likes: 80
+min_likes: 50
 max_likes: 200
-min_to_follow: 10
-max_to_follow: 20
-max_followers: 5000
-min_fallowers: 50
+min_to_follow: 1
+max_to_follow: 5
+max_followers: 500
+min_fallowers: 5
 min_following: 50
 likes_sample: 20
 user_interacts: 5
