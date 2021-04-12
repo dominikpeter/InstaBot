@@ -1,8 +1,8 @@
 min_likes: 80
-max_likes: 500
+max_likes: 200
 min_to_follow: 10
 max_to_follow: 20
-max_followers: 10000
+max_followers: 5000
 min_fallowers: 50
 min_following: 50
 likes_sample: 20
@@ -22,6 +22,8 @@ locations:
 likes:
   - sunrise
   - sunset
+  - sonnenaufgang
+  - sonnenuntergang
   - droneoftheday
   - drone
   - switzerland
