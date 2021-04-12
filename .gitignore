@@ -5,6 +5,8 @@ __pycache__/
 
 .env
 
+cronlog.log
+
 ./instapy/tmp
 
 # C extensions

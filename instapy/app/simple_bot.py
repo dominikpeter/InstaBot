@@ -4,7 +4,6 @@ import os
 import time
 from datetime import datetime
 
-
 from instapy import InstaPy
 from instapy import smart_run
 from const import *
@@ -28,7 +27,7 @@ with smart_run(session):
                                     min_followers=MIN_FOLLOWERS,
                                     min_following=MIN_FOLLOWING)
 
-    session.set_user_interact(amount=USER_INTERACTS, randomize=True, percentage=60)
+    session.set_user_interact(amount=USER_INTERACTS, randomize=True, percentage=50)
 
     session.set_do_follow(enabled=True, percentage=40)
     session.set_do_like(enabled=True, percentage=80)
@@ -51,11 +50,11 @@ with smart_run(session):
                            unfollow_after=90 * 60 * 60,
                            sleep_delay=600)
 
-    session.set_do_comment(enabled=True, percentage=95)
-    session.set_comments(PHOTO_COMMENTS, media='Photo')
+    session.set_do_comment(enabled=True, percentage=50)
+    session.set_comments(PHOTO_COMMENTS, media="Photo")
 
-    for pod in PODS:
-        session.join_pods(topic=pod)
+#    for pod in PODS:
+#        session.join_pods(topic=pod)
 
 minutes_diff = (datetime.now() - start).total_seconds() / 60.0
 session.logger.info(f"Duration = {minutes_diff} minutes")
