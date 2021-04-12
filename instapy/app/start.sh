@@ -2,7 +2,8 @@
 
 
 
-if [ $(((RANDOM % 3) + 1)) -eq 1 ]
+
+if [ $(((RANDOM % 3) + 1)) -eq 1 ] || [ $1 -eq 1 ]
 then
  echo $(date): Bot started...
  cd ~/Projects/InstaBot/instapy/app
