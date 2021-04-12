@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 if [ $(((RANDOM % 3) + 1)) -eq 1 ]
 then
  echo $(date): Bot started...
