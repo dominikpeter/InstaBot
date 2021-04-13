@@ -2,10 +2,10 @@ min_likes: 50
 max_likes: 200
 min_to_follow: 1
 max_to_follow: 5
-max_followers: 500
+max_followers: 1000
 min_fallowers: 5
-min_following: 50
-likes_sample: 20
+min_following: 10
+likes_sample: 15
 user_interacts: 5
 
 locations:
@@ -27,6 +27,7 @@ likes:
   - droneoftheday
   - drone
   - switzerland
+  - mountainbike
 
 random_likes:
   - sunrise
@@ -34,6 +35,12 @@ random_likes:
   - drone
   - droneshot
   - dronephotography
+  - droneoftheday
+  - djimavic
+  - goprohero8
+  - goprohero
+  - gopro
+  - goprohero9
   - rigi
   - gislifluh
   - hallwilersee
@@ -47,6 +54,7 @@ random_likes:
   - drohne
   - see
   - aargau
+  - naturlover
   - sempachersee
   - water
   - calm
@@ -54,14 +62,14 @@ random_likes:
   - luzern
   - bern
   - aarau
+  - zürich
   - wandern
   - berge
   - droneoftheday
-  - nature
   - landscape
   - natur
+  - nature
   - wanderlust
-  - lakelife
   - sky
   - relax
   - photography
@@ -101,3 +109,5 @@ pods:
   - mountainbike
   - standuppaddle
   - hike
+  - nature
+  - sunrise
