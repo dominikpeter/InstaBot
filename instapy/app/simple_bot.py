@@ -29,7 +29,7 @@ with smart_run(session):
 
     session.set_user_interact(amount=USER_INTERACTS, randomize=True, percentage=50)
 
-    session.set_do_follow(enabled=True, percentage=40)
+#    session.set_do_follow(enabled=True, percentage=40)
     session.set_do_like(enabled=True, percentage=80)
 
     session.set_dont_include(FRIEND_LIST)
@@ -43,12 +43,12 @@ with smart_run(session):
                               amount=random.randint(MIN_LIKES, MAX_LIKES),
                               randomize=True)
 
-    session.unfollow_users(amount=random.randint(MIN_TO_FOLLOW, MAX_TO_FOLLOW),
-                           instapy_followed_enabled=True,
-                           instapy_followed_param="all",
-                           style="FIFO",
-                           unfollow_after=90 * 60 * 60,
-                           sleep_delay=600)
+ #   session.unfollow_users(amount=random.randint(MIN_TO_FOLLOW, MAX_TO_FOLLOW),
+ #                          instapy_followed_enabled=True,
+ #                          instapy_followed_param="all",
+ #                          style="FIFO",
+ #                          unfollow_after=90 * 60 * 60,
+ #                          sleep_delay=600)
 
     session.set_do_comment(enabled=True, percentage=50)
     session.set_comments(PHOTO_COMMENTS, media="Photo")
